@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>E Waste</title>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Product', 'Landfill', 'Recycle', {role:'style'}, {role:'annotation'}],
+          ['Computers',  31300,      20600, 'opacity:0.85', '40%'],
+          ['Monitors',  24100,      11700, 'opacity:0.85', '33%'],
+          ['Televisions',  23600,      4940, 'opacity:0.85', '17%'],
+          ['Mobile Devices', 135000, 17400, 'opacity:0.85', '11%'],
+        ]);
+
+        var options = {
+          title: 'U.S. E-Waste Units: Landfill vs Recycle (in thousands of units)',
+          vAxis: {title: 'Product', titleTextStyle: {color: 'black'}},
+          hAxis: {title: 'Thousands of Units in the U.S.', titleTextStyle: {color: 'black'}},
+          legend: {textStyle: {color: 'black', fontSize: 14}},
+          series: [{color: 'orange'}, {color:'blue'}]
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- font import -->
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower|Raleway' rel='stylesheet' type='text/css'>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#problem").height($("#solution").height());
+      });
+    </script>
+</head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+            <div id="chart_div" style="min-height:30%;padding:10 10 10 10;"></div>
+        </div>
+      </div>
+      <div class="row" id="e-waste-info">
+        <div class="col-md-6 bg-danger" id="problem" style="min-height:30%;">
+          <h2>The Problem</h2>
+          <p>
+            E-Waste is a growing problem in our society. The United States throws away more than 3.4 million tons of e-waste per year, a number which is growing at an accelerating rate. Much of the waste included in this category contains poisonous heavy metals, plastics, and other non-biodegradable materials that contaminate the environment for decades when dumped into landfills.
+          </p>
+          <p>
+            With the advent of computers in the 1980s, newer and newer gadgets have flooded the market, and the rate at which companies produce these electronics gets faster and faster. In 1985, the average U.S. household owned less than a single personal computer and less than 2 televisions. By 1995, these numbers had grown to 1.2 and 2.5 respectively. Our technology packed world has enabled mobility and productivity to skyrocket, but at what cost? The average American now spends over $500 on consumer electronics per year and owns a smartphone, a laptop, and more than one tablet, not counting the 3.4 TVs per household.
+          </p>
+          <p>
+            Without proper disposal, electronic waste contains chemicals that can potentially endanger the body. Old devices are known to leak chemicals like lead, mercury, or arsenic. Many chemicals can contaminate their surrounding environment. Even though they are initially harmless, over time, chemicals of certain corroded devices can seep into the ground or slip into the atmosphere.
+          </p>
+        </div>
+        <div class="col-md-6 bg-info" id="solution" style="min-height:30%;">
+          <h2>The Solution</h2>
+          <p>
+            Recycling consumer electronics is a solution both economically and environmentally friendly. The average lifespan of a TV or a smartphone is over 5 years, yet Americans discard theirs almost every year to buy the newer model. By recycling these discarded electronics at licensed e-waste recycling sites, the usable pieces can be given to the less fortunate, and the poisonous chemicals are reused in other electronics, preventing them from seeping into groundwater from an underground landfill.
+          </p>
+          <p>
+            From the chart above, it is clear that there are many products that are simply being tossed away instead of recycled. The largest problem comes from smartphones, of which a mere 11% are recycled each year while the other 89% go into landfills. This represents a staggering 135 million smartphones that have the potential to be recycled each year. Old smartphones can be traded in to some manufacturers for credit, or they can be given to e-waste facilities that take them in for free and repurpose their components into new products.
+          </p>
+          <p>
+            The best part? Many of these recycling services are offered for <strong>free</strong> as part of a federal and state initiative to push for less e-waste. To find out more, visit our detailed map of locations!
+          </p>
+          <a href="index.html#local-solutions" class="btn btn-primary btn-lg btn-block">Find Local Solutions</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-10 col-lg-offset-1 text-center">
+                Data taken from
+                <p>
+                <a href="http://www.ce.org/News/News-Releases/Press-Releases/2012-Press-Releases/CE-IndustryYearly-Revenues-Expected-to-Surpass-$2.aspx">Consumer Electronics Association Press Release, July 24, 2012</a> <br/>
+                <a href="http://www.epa.gov/wastes/conserve/materials/ecycling/docs/fullbaselinereport2011.pdf">Electronics Waste Management in the United States Through 2009, U.S. EPA, May 2011</a>
+                </p>
+              </div>
+          </div>
+      </div>
+    </footer>
+  </body>
+</html>

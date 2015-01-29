@@ -1,0 +1,4 @@
+raws/
+*.xcf
+*.o
+*.pyc

@@ -1,0 +1,72 @@
+.resize{
+	max-width:75%;
+	max-height:25%;
+}
+
+body {
+	font-family: 'Raleway', sans-serif !important;
+	position: relative;
+}
+
+.portrait{
+	width:960px;
+	height:960px;
+}
+
+.raleway {
+	font-size:20px;
+}
+
+.padded {
+	padding-left: 2em;
+	padding-top: 2em;
+	padding-right: 2em;
+	padding-bottom: 2em;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 , h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif !important;	
+}
+
+#content {
+	overflow: hidden;
+}
+
+/* Sections */
+#about {
+	margin: 10px;
+}
+
+.caption {
+	font-size:15px;
+}
+.subsection {
+	padding-left: 3em;
+	padding-bottom: 1em;
+}
+.award {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+/* Colors */
+#sidebar-wrapper {
+	background: #5B8930 !important;
+}
+#content {
+	background: #CCD1D9;
+}
+.sidebar-nav li a {
+	color: #000000 !important;
+	font-size: 17px;
+}
+.active{
+	background: #FFFFFF;
+}
+#sidebar-tabs {
+	background-color: #5B8930;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+.sidebar-brand {
+	background: #000000 !important;
+}

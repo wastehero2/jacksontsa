@@ -47,7 +47,7 @@ body {
 #sidebar-wrapper {
 	background: #7A8D6E !important;
 }
-#wrapper {
+#wrapper, #content {
 	background: #C8DBBB;
 }
 .sidebar-nav li a {

@@ -8,11 +8,6 @@ body {
 	position: relative;
 }
 
-.portrait{
-	width:960px;
-	height:960px;
-}
-
 .raleway {
 	font-size:20px;
 }
@@ -50,10 +45,10 @@ body {
 }
 /* Colors */
 #sidebar-wrapper {
-	background: #5B8930 !important;
+	background: #7A8D6E !important;
 }
-#content {
-	background: #CCD1D9;
+#wrapper {
+	background: #C8DBBB;
 }
 .sidebar-nav li a {
 	color: #000000 !important;
@@ -63,10 +58,45 @@ body {
 	background: #FFFFFF;
 }
 #sidebar-tabs {
-	background-color: #5B8930;
+	background-color: #7A8D6E;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
 }
+.jumbotron{
+	background:#B6BAA4 !important;
+}
 .sidebar-brand {
 	background: #000000 !important;
+}
+
+.view-port {
+  width: 960px;
+  overflow: hidden;
+  position: relative;
+}
+.slider-container {
+  position: relative;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+}
+.item:hover {
+  opacity: 0.7;
+}
+.item {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  margin-right: 8px;
+  cursor: pointer; cursor: hand;
+}
+
+a.next {
+  float: right;
+  display: block;
+  position: absolute;
+  right: 0;
+}
+a.prev {
+  float:left;
 }

@@ -7,6 +7,8 @@
         <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'/>
         <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../js/cte-classes.js"></script>
+        <script type="text/javascript" src="../js/debounce.min.js"></script>
         <script type="text/javascript" src="../js/app.js"></script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,44 +18,78 @@
         <title>Henry M. Jackson TSA</title>
         <!-- Bootstrap Core CSS -->
         <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link href="../css/simple-sidebar.css" rel="stylesheet">
     </head>
     <body data-target=".tabbable">
         <div id="wrapper">
-            <!-- Sidebar -->
-            <div id="sidebar-wrapper" class="tabbable">
-                <ul class="nav sidebar-nav" id="sidebar-tabs" role="tablist">
-                    <li class="sidebar-brand">
-                        <p style="color:#FFFFFF;font-weight:700;">Jackson TSA Chapter<i class="fa fa-paw fa-lg"></i></p>
-                    </li>
-                    <li>
-                        <a href="about.html">About<i class="fa fa-info fa-lg"></i></a>
-                    </li>
-                    <li>
-                        <a href="members.html">Members<i class="fa fa-group fa-lg"></i></a>
-                    </li>
-                    <li>
-                        <a href="achievements.html">Achievements<i class="fa fa-graduation-cap fa-lg"></i></a>
-                    </li>
-                    <li class="active">
-                        <a href="cte-programs.html">CTE Program<i class="fa fa-laptop fa-lg"></i></a>
-                    </li>
-                    <li>
-                        <a href="../designbrief/index.html">Design Brief<i class="fa fa-recycle fa-lg"></i></a>
-                    </li>
-                </ul>
-            </div>
+            <!--Navbar-->
+            <nav class="menu__nav navbar navbar-default navbar-fixed-top top-nav-collapse" role="navigation">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <div class="container">
+                        <ul class="menu__items nav navbar-left navbar-nav">
+                            <li>
+                                <a href="cte-programs.html">CTE Program <i class="fa fa-laptop fa-lg"></i></a>
+                            </li>
+                            <li>
+                                <a href="members.html">Members <i class="fa fa-group fa-lg"></i></a>
+                            </li>
+                        </ul>
+                        <ul class="menu__items nav navbar-right navbar-nav">
+                            <li>
+                                <a href="achievements.html">Achievements <i class="fa fa-graduation-cap fa-lg"></i></a>
+                            </li>
+                            <li>
+                                <a href="../designbrief/index.html">Design Brief <i class="fa fa-recycle fa-lg"></i></a>
+                            </li>
+                        </ul>
+                        <a class="menu__logo navbar-brand" href="../index.html" style="position:absolute;left:50%;margin-left:-150px">
+                            <span class="logo">
+                                <span class="logo__text" style="color:#000000;font-weight:700;">Jackson TSA Chapter <i class="fa fa-paw fa-lg"></i>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
             <!-- Main Content Body -->
             <div class="container" id="content">
-            <!--CTE Section-->
-            <div class="row" id="cte-program">
-                <h2 class="jumbotron">Career and Technical Education</h2>
-                <h1><center>TO BE COMPLETED</center></h1>
+                <!--CTE Section-->
+                <div class="row" id="cte-program">
+                    <h2 class="jumbotron" style="margin-top:75px;">Career and Technical Education</h2>
+                    <h3><center>Technical preparation is a partnership between high schools and community colleges to provide high school students the opportunity to earn college credit by qualifying in technical high school classes. This system provides the bread and butter for those who want to excel in TSA. To increase variety in technological education, there are several subclasses:</center></h3>
+                </div>
+                <div class="row" id="cte-content"></div>
+                <table class="table">
+                    <tr>
+                        <th>Category</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Business and Marketing:</strong></td>
+                    <td>This category focuses on the economy and how to get into the real world market.  The main study of the business courses is on different functions of the economy such as international economics, market failure, and distributions of income.</td>
+                </tr>
+                
+                    <tr><td><strong>Health and Human Services:</strong></td>
+                    <td>Granting a student a first-hand experience, they learn valuable life skills such as food preparation and basic first aid.</td>
+                    </tr>
+                    <tr><td><strong>Technology- Trade and Industry:</strong></td>
+                    <td>As a broad idea, this category focuses on the application of technology to potential real world careers.  For example, students will learn about anything ranging from graphic design to computer programming, to even video game design.</td>
+                    </tr>
+                    <tr><td><strong>Work Based Learning:</strong></td>
+                    <td>Rather than being traditional classes set in a classroom setting, this category of CTE classes focuses on real world experience and allows students to get hands-on experience with the “career” of their choices.
+                    </td>
+                </tr>
+                </table>
             </div>
         </div>
     </div>
-            </div>
-        </div>
-    </body>
+</div>
+</body>
 </html>

@@ -1,3 +1,24 @@
+
+$(document).ready(function(){
+
+  var fsvs = $.fn.fsvs({
+    speed : 2000,
+    bodyID : 'fsvs-body',
+    selector : '> .slide',
+    mouseSwipeDisance : 40,
+    afterSlide : function(){},
+    beforeSlide : function(){},
+    endSlide : function(){},
+    mouseWheelEvents : true,
+    mouseDragEvents : true,
+    touchEvents : true,
+    arrowKeyEvents : true,
+    pagination : true,
+    nthClasses : false,
+    detectHash : true
+  });
+});
+
 function initialize() {
   var mapOptions = {
     center: { lat: 47.858888, lng: -122.220801},
@@ -28,4 +49,3 @@ function initialize() {
 
 }
 google.maps.event.addDomListener(window, 'load', initialize);
-

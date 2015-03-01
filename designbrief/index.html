@@ -1,127 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>E Waste</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-
-    <!-- font import -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:800,400' rel='stylesheet' type='text/css'>
-      
-  </head>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-default navbar-fixed-top top-nav-collapse" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+<html lang="en" class="fsvs">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>E Waste</title>
+        <link href="css/style.css" rel="stylesheet">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/scrolling-nav.css" rel="stylesheet">
+        <!-- font import -->
+        <link href='http://fonts.googleapis.com/css?family=Raleway:800,400' rel='stylesheet' type='text/css'>   
+        <link rel="icon" href="/favicon.ico">
+    </head>
+    
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-default navbar-fixed-top top-nav-collapse" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
+                    </button>
+                    <a class="navbar-brand" href="#page-top">Home</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#local-solutions">Local Solutions</a>
+                        </li>
+                        <li>
+                            <a href="../index.html">Chapter Info</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#local-solutions">Local Solutions</a>
-                    </li>
-                    <li>
-                        <a href="../index.html">Chapter Info</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Intro Section -->
-    <section id="intro" class="intro-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Re-tell</h1>
-                    <p>Give your old electronics a new purpose.</p>
-                    <a class="btn btn-default page-scroll" href="#about">Find out more</a>                  
-                    <a class="btn btn-success" href="ewaste.html">Learn about E-Waste</a>
+            <!-- /.container -->
+        </nav>
+        <div id="fsvs-body">
+            <!-- Intro Section -->
+            <div class="slide">
+                <div class="intro-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h1>Re-tell</h1>
+                                <p>Give your old electronics a new purpose.</p>
+                                <a class="btn btn-default page-scroll" href="#about">Find out more</a>
+                                <a class="btn btn-success" href="ewaste.html">Learn about E-Waste</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Why Recycle?</h1>
-                    <p>In the age of persistent discovery, it can be easy to forget the electronics we keep around when we replace our old tech with the "next big thing". The truth is, keeping around old electrical and electronic equipment like batteries can be very harmful. Most electronics contain hazardous materials that become harmful as the chemicals inside decay. Keeping them around for too long without proper disposal is dangerous; some chemical compounds that are used in these electronics are initially benign in nature, but grow to become hazardous over time.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Local Solutions -->
-    <section id="local-solutions" class="local-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Local Solutions</h1>
-                            <div id="map-canvas" class="col-sm-6" style="height:500px;"></div>
-                            <div class="thumbnail col-sm-6  local-bg">
-                                <div class="thumbnails col-sm-6"><h3>Lynnwood</h3><h5>E-Waste, LLC </h5>
-                                    <p>12424 Beverly Park Road Suite A-4 Lynnwood, WA 98087 (425)239-4118</p>
+            <!-- About Section -->
+            <div class="slide" id="about">
+                <div class="slide about-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h1>Why Recycle?</h1>
+                                <p>In the age of persistent discovery, it can be easy to forget the electronics we keep around when we replace our old tech with the "next big thing". The truth is, keeping around old electrical and electronic equipment like batteries can be very harmful. Most electronics contain hazardous materials that become harmful as the chemicals inside decay. Keeping them around for too long without proper disposal is dangerous; some chemical compounds that are used in these electronics are initially benign in nature, but grow to become hazardous over time.</p>
+                            </div>
+                            <div class="col-lg-12">
+                                <h4>U.S. E-Waste Units: Landfill vs Recycle (in thousands of units)<h4>
+                                <div class="col-md-3" style="text-align:center;">
+                                    <div class="chart" id="chartcomp" style="min-height:40%;"></div>
+                                    Computer
                                 </div>
-                                <div class="thumbnails col-sm-6"><h3>Everett</h3><h5>Pacific Power Batteries</h5>
-                                    <p>3729 Broadway Everett, WA 98201 (425)259-9260</p>
+                                <div class="col-md-3" style="text-align:center;">
+                                    <div class="chart" id="chartmonitor" style="min-height:40%;"></div>
+                                    Monitor
                                 </div>
-                                <div class="thumbnails col-sm-6"><h3>Mount Vernon</h3><h5>Pacific Power Batteries</h5>
-                                    <p>107 East Cedar Street Mount Vernon, WA 98273 (360)419-3190</p>
+                                <div class="col-md-3" style="text-align:center;">
+                                    <div class="chart" id="charttv" style="min-height:40%;"></div>
+                                    Television
+                                </div>
+                                <div class="col-md-3" style="text-align:center;">
+                                    <div class="chart" id="chartmobile" style="min-height:40%;"></div>
+                                    Mobile Phone
                                 </div>
                             </div>
-                            <p style="font-size:20px;">Try this: Donating your old phone to a nearby shelter can help a teen or adult contact 911 in emergencies.</p>
-                            <p style="font-size:20px;">Remember to wipe <strong>sensitive</strong> information off of old devices and <strong>back-up</strong> files you want to keep!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Local Solutions -->
+            <div class="slide" id="local-solutions">
+                <div class="slide local-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h1>Local Solutions</h1>
+                                <div id="map-canvas" class="col-sm-6" style="height:500px;"></div>
+                                <div class="thumbnail col-sm-6  local-bg">
+                                    <div class="thumbnails col-sm-6"><h3>Lynnwood</h3><h5>E-Waste, LLC </h5>
+                                        <p>12424 Beverly Park Road Suite A-4 Lynnwood, WA 98087 (425)239-4118</p>
+                                    </div>
+                                    <div class="thumbnails col-sm-6"><h3>Everett</h3><h5>Pacific Power Batteries</h5>
+                                        <p>3729 Broadway Everett, WA 98201 (425)259-9260</p>
+                                    </div>
+                                    <div class="thumbnails col-sm-6"><h3>Mount Vernon</h3><h5>Pacific Power Batteries</h5>
+                                        <p>107 East Cedar Street Mount Vernon, WA 98273 (360)419-3190</p>
+                                    </div>
+                                </div>
+                                <p style="font-size:20px;">Try this: Donating your old phone to a nearby shelter can help a teen or adult contact 911 in emergencies.</p>
+                                <p style="font-size:20px;">Remember to wipe <strong>sensitive</strong> information off of old devices and <strong>back-up</strong> files you want to keep!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
-    <!-- google maps api -->
-    <script type="text/javascript"
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-4bRYgpzwnE-H8V5ihe7eQcyyRC2-mlU"></script>
-    <script src="js/app.js"></script>
-
-</body>
-
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Scrolling Nav JavaScript -->
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/scrolling-nav.js"></script>
+        <!-- google maps api -->
+        <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-4bRYgpzwnE-H8V5ihe7eQcyyRC2-mlU"></script>
+        <script src="js/bundle.js"></script>
+        <script src="js/app.js"></script>
+        <!-- google charts api -->
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+        google.load("visualization", "1", {packages:["corechart"]});
+        google.setOnLoadCallback(drawChart);
+        function drawChart() {
+        var data1 = google.visualization.arrayToDataTable([
+        ['Result', 'Number', {role:'style'}, {role:'annotation'}],
+        ['Landfill',  31300, 'opacity:0.85', '60%'],
+        ['Recycle',  20600, 'opacity:0.85', '40%'],
+        ]);
+        var data2 = google.visualization.arrayToDataTable([
+        ['Result', 'Number', {role:'style'}, {role:'annotation'}],
+        ['Landfill',  24100, 'opacity:0.85', '65%'],
+        ['Recycle',  11700, 'opacity:0.85', '35%'],
+        ]);
+        var data3 = google.visualization.arrayToDataTable([
+        ['Result', 'Number', {role:'style'}, {role:'annotation'}],
+        ['Landfill',  23600, 'opacity:0.85', '79%'],
+        ['Recycle',  4940, 'opacity:0.85', '21%'],
+        ]);
+        var data4 = google.visualization.arrayToDataTable([
+        ['Result', 'Number', {role:'style'}, {role:'annotation'}],
+        ['Landfill',  135000, 'opacity:0.85', '88%'],
+        ['Recycle',  17400, 'opacity:0.85', '12%'],
+        ]);
+        var options = {
+        legend: {position: 'none'},
+        series: [{color: 'green'}, {color:'blue'}],
+        backgroundColor: { fill:'transparent' },
+        };
+        var chartComp = new google.visualization.PieChart(document.getElementById('chartcomp'));
+        var chartMonitor = new google.visualization.PieChart(document.getElementById('chartmonitor'));
+        var chartTV = new google.visualization.PieChart(document.getElementById('charttv'));
+        var chartMobile = new google.visualization.PieChart(document.getElementById('chartmobile'));
+        chartComp.draw(data1, options);
+        chartMonitor.draw(data2, options);
+        chartTV.draw(data3, options);
+        chartMobile.draw(data4, options);
+        }
+        </script>
+    </body>
 </html>

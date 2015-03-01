@@ -3,6 +3,11 @@
 	max-height:25%;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
 	font-family: 'Raleway', sans-serif !important;
 	position: relative;
@@ -28,6 +33,22 @@ body {
 }
 
 /* Sections */
+#intro {
+	min-height: 500px;
+	width:100%;
+	background: url('../pictures/homepage.jpg') no-repeat center center scroll;
+}
+#introwords {
+	position:absolute;
+	margin-top: 50px;
+	padding-top: 125px;
+	margin-left: 10%;
+	color:#FFFFFF;
+	font-size:4em;
+	font-weight: 700;
+	font-family: sans-serif;
+	text-shadow: 0 2px 0 #444;
+}
 #about {
 	margin: 10px;
 }
@@ -70,13 +91,11 @@ body {
 }
 
 .view-port {
-  width: 960px;
-  overflow: hidden;
   position: relative;
 }
 .slider-container {
   position: relative;
-  height: 250px;
+  height: 325px;
   margin: 0;
   padding: 0;
 }
@@ -85,18 +104,37 @@ body {
 }
 .item {
   position: absolute;
-  height: 200px;
-  width: 200px;
+  height: 260px;
+  width: 260px;
   margin-right: 8px;
   cursor: pointer; cursor: hand;
 }
 
 a.next {
-  float: right;
   display: block;
   position: absolute;
   right: 0;
 }
 a.prev {
   float:left;
+}
+
+.class {
+	display: none;
+	font-size: 0.75em;
+	font-weight: 400;
+}
+
+.category {
+	font-size: 1.5em;
+	font-weight: 700;
+	background:#B6BAA4 !important;
+}
+.category:hover {
+	opacity: 0.9;
+	cursor: pointer; cursor: hand;
+}
+
+table {
+	font-size: 17px;
 }

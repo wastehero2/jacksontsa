@@ -1,5 +1,4 @@
-$(document).ready(function(){
-
+$(document).ready(function(){ 
   //Scrolls to div with id #whatever
   $('a[href*=#]:not([href=#])').click(function() {
     var herodiv = $("html, body");
@@ -16,3 +15,4 @@ $(document).ready(function(){
     }
   });
 });
+
